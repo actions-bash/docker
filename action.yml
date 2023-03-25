@@ -1,0 +1,16 @@
+name: 'Bash Action - Docker container'
+description: 'A Bash Action template using Docker.'
+
+inputs:
+  name:
+    description: 'Name of thing'
+    required: false
+    default: 'World'
+
+outputs:
+  time:
+    description: 'Current time'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
